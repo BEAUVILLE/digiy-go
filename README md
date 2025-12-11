@@ -1,0 +1,45 @@
+DIGIYGO — Inscription Client (rapide)
+
+Pour les personnes qui veulent :
+
+réserver une table
+
+commander un chauffeur
+
+réserver un logement DIGIY LOC
+
+contacter un artisan DIGIY BUILD
+
+profiter des bons plans DIGIY BONNE AFFAIRE
+
+explorer les pros autour d’eux
+
+👉 3 champs seulement : Nom • Téléphone • Email
+Rapide. Mobile-first. Sans friction.
+
+2️⃣ DIGIY PRO — Inscription Professionnelle
+
+Pour les chauffeurs, restaurateurs, hébergeurs, artisans, commerçants, coachs, vendeurs, PME…
+
+Inclut :
+
+Nom complet
+
+Téléphone WhatsApp
+
+Email de connexion
+
+Module principal (Driver, Loc, Resto, Market, Jobs…)
+
+Notes
+
+Enregistrement automatique dans pre_registrations
+
+Envoi du lien magique Supabase → accès direct à MON ESPACE DIGIY
+
+🔗 Liens directs
+Usage	URL
+Formulaire Client DIGIYGO	https://beauville.github.io/digiygo-inscription/
+Formulaire Professionnel DIGIY PRO	https://beauville.github.io/inscription-digiy/
+Mon Espace DIGIY	https://beauville.github.io/mon-espace-digiy/
+HUB DIGIY	https://digiylyfe.com/accueil-digiy/
