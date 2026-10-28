@@ -905,7 +905,7 @@
   market: "https://beauville.github.io/digiy-market/",
   jobs: "https://digiylyfe.com/digiy-jobs/",
   bonPlan: "https://beauville.github.io/digiy-bonne-affaire/",
-  inscription: "https://beauville.github.io/inscription-digiy/",
+  inscription: "https://digiylyfe.com/tarifs-adherents-1.html?country=sn",
   dashboard: "https://beauville.github.io/mon-espace-digiy/"
 };
 
@@ -913,6 +913,16 @@
     const url = ROUTES[type];
     if(!url){
       alert("Ce module arrive bientôt dans ton espace client DIGIY 😅");
+      return;
+    }
+    if(type === "inscription"){
+      const q=new URLSearchParams(location.search);
+      const raw=String(q.get("country")||q.get("pays")||"sn").toLowerCase();
+      const destination=new URL("https://digiylyfe.com/tarifs-adherents-1.html");
+      destination.searchParams.set("country",raw==="fr"||raw==="france"?"fr":raw==="us"||raw==="usa"?"us":"sn");
+      const lang=String(q.get("lang")||"fr").slice(0,2).toLowerCase();
+      destination.searchParams.set("lang",["fr","en","es","pt","it","de","nl","ar"].includes(lang)?lang:"fr");
+      window.location.href=destination.toString();
       return;
     }
     window.location.href = url;
